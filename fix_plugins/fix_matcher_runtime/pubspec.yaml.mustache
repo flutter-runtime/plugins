@@ -1,0 +1,31 @@
+name: {{{name}}}
+version: 0.0.1
+publish_to: none
+description: {{{name}}} description
+
+executables:
+  {{{name}}}:
+
+environment:
+  sdk: ">=2.12.2 <3.0.0"
+
+dependencies:
+  args: ^2.3.1
+  process_run: ^0.12.3+2
+  ide_plugin:
+    git:
+      url: https://github.com/flutter-runtime/ide_plugin.git
+      ref: main
+  analyze_cache:
+    git:
+      url: https://github.com/flutter-runtime/analyze_cache.git
+      ef: main
+dev_dependencies:
+  lints: ^1.0.0
+  test: ^1.16.0
+
+
+commands:
+  fix_runtime:
+    name: analyzer
+    version: 6.10.0
