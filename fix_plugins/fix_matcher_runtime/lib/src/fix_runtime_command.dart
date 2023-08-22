@@ -7,10 +7,10 @@ import 'fix_runtime.dart';
 
 class FixRuntimeCommand extends BaseCommand {
   @override
-  String get description => 'fix_runtime';
+  String get description => '修复运行时库错误';
 
   @override
-  String get name => '修复运行时库错误';
+  String get name => 'fix_runtime';
 
   @override
   Future<ChannelResponse> runPlugin(ChannelResource resource) async {

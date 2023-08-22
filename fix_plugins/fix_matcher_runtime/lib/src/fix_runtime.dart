@@ -14,6 +14,10 @@ class FixRuntime {
     fileCache.enums.forEach(_fixEnum);
     fileCache.mixins.forEach(_fixMixin);
     fileCache.imports.forEach(_fixImport);
+    if (filePath == 'lib/mirror_matchers.dart') {
+      fileCache.imports
+          .removeWhere((element) => element.uriContent == 'dart:mirrors');
+    }
   }
 
   _fixClass(AnalyzerClassCache cache) {
