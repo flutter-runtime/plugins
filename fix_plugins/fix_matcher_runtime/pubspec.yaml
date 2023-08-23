@@ -28,3 +28,5 @@ commands:
   fix_runtime:
     name: matcher
     version: 0.12.13
+    files:
+      - lib/mirror_matchers.dart
